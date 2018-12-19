@@ -118,7 +118,20 @@ func switchCase() {
 	}
 }
 
+func switchNoCondition() {
+	t := time.Now()
+	switch {
+	case t.Hour() < 12:
+		fmt.Println("Good Morning.")
+	case t.Hour() < 17:
+		fmt.Println("Good Afternoon.")
+	default:
+		fmt.Println("Good Evening.")
+	}
+}
+
 func main() {
+	switchNoCondition()
 	switchCase()
 	switchStatement()
 	fmt.Println(
@@ -141,7 +154,7 @@ func main() {
 	fmt.Println(split(10))
 	a, b := swap("Go is", "Great")
 	fmt.Println(a, b)
-	fmt.Println(add(2, 4))
+	defer fmt.Println(add(2, 4)) //defers the execution till other funcions are executed
 	fmt.Printf("hello, world\n")
 	fmt.Printf("Type: %T Value: %v\n", ToBe, ToBe)
 	fmt.Printf("Type: %T Value: %v\n", MaxInt, MaxInt)
