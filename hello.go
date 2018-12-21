@@ -164,4 +164,7 @@ func main() {
 	structDemo()
 	arrayDemo()
 	makeDemo()
+	slicesDemo()
+	rangeDemo()
+	sliceExercise()
 }
