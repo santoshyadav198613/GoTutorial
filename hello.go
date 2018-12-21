@@ -8,6 +8,7 @@ import (
 	"time"
 )
 
+
 // func add(num1 int,num2 int) int {
 //     return num1+ num2;
 // }
@@ -159,4 +160,8 @@ func main() {
 	fmt.Printf("Type: %T Value: %v\n", ToBe, ToBe)
 	fmt.Printf("Type: %T Value: %v\n", MaxInt, MaxInt)
 	fmt.Printf("Type: %T Value: %v\n", z, z)
+	pointer()
+	structDemo()
+	arrayDemo()
+	makeDemo()
 }
