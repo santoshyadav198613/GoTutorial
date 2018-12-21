@@ -169,4 +169,5 @@ func main() {
 	sliceExercise()
 	mapDemo()
 	wordCount()
+	functionDemo()
 }
